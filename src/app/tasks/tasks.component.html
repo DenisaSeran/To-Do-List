@@ -1,0 +1,28 @@
+<div id="page">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+
+<h1>[ TO DO ]</h1>
+<div id="container">
+
+<div>
+    <button id="createbtn" (click)="onCreate()">[ create task ]</button>
+    <button id="deletebtn"(click)="onDelete()">[ delete task ]</button>
+</div>
+
+<div>
+    <input id="taskinput" placeholder="[ tasks ]">
+</div>
+   
+<div [hidden]="notasks">
+    <h4>[ no tasks so far ]</h4>
+</div>
+
+    <ul id="listOfTasks">
+        <h3 *ngFor="let tsk of tasks">{{tsk}}</h3>
+    </ul>
+
+</div>
+</div>
