@@ -6,7 +6,7 @@
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at bottom, #1a1f24 0%, #000000 100%);
     overflow: hidden;
     width: 100%;
     height:1000px;
@@ -71,24 +71,52 @@
       transform: translateY(-2000px);
     }
   }
-h1{
-    text-align: center;
-    font-family: Courier;
-    color:blanchedalmond;
-}
 h4{
     text-align: center;
-    font-family: 'Courier New';
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Courier;
+    color:blanchedalmond;
     opacity: 25%;
-    color: blanchedalmond;
+}
+.wrapper{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#title{
+    width: 9ch;
+    animation: typing 2s steps(15), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 3em;
+    border-right: 3px solid;
+    font-family: 'Courier New';
+    color: rgb(243, 240, 212);
+    margin-top: 2%;
+  
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 #container{
     border: thin black;
     border-radius: 5cm;
-    background-color: rgba(56, 54, 66, 0.65);
+    background-color: rgba(69, 67, 77, 0.5);
     position: fixed;
     width: 75%;
     margin-left: 11%;
+    margin-top: 5%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 #createbtn{
@@ -139,29 +167,19 @@ h4{
     width: 300px;
     height: 35px;
     font-size:medium;
-    background: linear-gradient(
-        90deg,
-        rgba(247, 213, 213,0.75) 0%,
-        rgba(243, 225, 201,0.75) 10%,
-        rgba(235, 240, 195,0.75) 20%,
-        rgba(217, 245, 208,0.75) 30%,
-        rgba(187, 240, 207,0.75) 40%,
-        rgba(186, 233, 211,0.75) 50%,
-        rgba(191, 236, 232,0.75) 60%,
-        rgba(183, 224, 235,0.75) 70%,
-        rgba(203, 209, 241,0.75) 80%,
-        rgba(203, 198, 241,0.75) 90%,
-        rgba(230, 204, 247,0.75) 100%
-    );
+    background-color: rgba(255, 255, 255, 0.50);
     border: 0px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     font-weight:bolder;
+    border-radius: 2%;
 }
 #taskinput:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(36, 34, 34, 0.12) 0px 4px 6px, rgba(39, 37, 37, 0.17) 0px 12px 13px, rgba(46, 44, 44, 0.09) 0px -3px 5px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 #listOfTasks{
     margin-left: 45%;
     font-family: 'Courier New';
+    color: rgb(224, 201, 171);
+
 }
 
